@@ -16,6 +16,7 @@ It's like mining but with less resources
 
 Modyfied by: 
 @Stepppkkkhhh Telegram
+@luckywww54   Vk
         """)
 
 helpText()
