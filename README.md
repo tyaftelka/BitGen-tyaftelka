@@ -4,13 +4,16 @@ Install
 pip install -r requirments.txt
 
 python3 main.py
-ᅠ ᅠ 
-ᅠ ᅠ 
-ᅠ ᅠ 
-ᅠ ᅠ 
-ᅠ ᅠ 
-ᅠ ᅠ 
-ᅠ ᅠ 
+
+
+
+
+
+
+
+
+
+
 ᅠ ᅠ 
 Install variant 2
 
