@@ -8,7 +8,7 @@ It's like mining but with less resources
 
 
 # Install
-pip install -r requirments.txt
+pip install -r requirements.txt
 
 python3 main.py
 
