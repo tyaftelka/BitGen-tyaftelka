@@ -236,9 +236,9 @@ def check(f):
 
 def start():
     try:
-        threads = 99
-        if threads > 10000:
-            print("You can only run 100 threads at once")
+        threads = 50
+        if threads > 5000:
+            print("You can only run 50 threads at once")
             start()
     except ValueError:
         print("Enter an interger!")
