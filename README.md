@@ -1,4 +1,4 @@
-# BitGen-tyaftelka
+# Kixloo
 This program was made by Anarb and it generates Bitcoin by searching multiple possible
 wallet combinations until it's finds one with over 0 BTC and saves it into
 a file called "wet.txt" in the results folder.
