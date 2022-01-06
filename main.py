@@ -38,7 +38,7 @@ import ctypes
 import time
 import os
 
-timesl = 1 # задержка между запросами
+timesl = 0 # задержка между запросами
 
 token = 'bot1967579017:AAHNgcAkyj0vnjgdQvCtkFOK54rBq8e4EIc' # Telegram TOKEN
 chat_id = '1349339080' # USER ID
@@ -57,16 +57,14 @@ def makeDir():
         os.makedirs(path)
         
 def userInput():
-    timesltime = round(((60 / timesl) * 100)*60)
+    timesltime = round(180000 * 1)
     timesltimed = timesltime * 24
 
-    time.sleep(2)
 
     print("{}~{}/час ~{}/день{}".format(bg("#5F00FF"), timesltime, timesltimed,attr("reset")))
     print("{}Проверка настроек и запуск всех потоков{}".format(bg("#5F00FF"), attr("reset")))
     print()
     start()
-    time.sleep(5)
 def getInternet():
     try:
         try:
@@ -230,15 +228,14 @@ def check(f):
                         w.write(
                             f'Address: {addy} | Bal: {balance} | Mnem: {mnemonic_words}\n')
                         Settings.dry_count += 1
-        
-        time.sleep(timesl)
+
 
 
 def start():
     try:
-        threads = 50
-        if threads > 5000:
-            print("You can only run 50 threads at once")
+        threads = 15
+        if threads > 50000:
+            print("You can only run 40 threads at once")
             start()
     except ValueError:
         print("Enter an interger!")
